@@ -45,7 +45,7 @@ To avoid `require('require-all-root')` in multiple files, you can setup it ones 
 // In start.js
 global.reqall = require('require-all-root')
  
-// In lib/foo/bar.js 
+// In /some/path.js 
 const lib = reqall('/lib')
 ```
 
