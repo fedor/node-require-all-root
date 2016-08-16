@@ -3,7 +3,7 @@ var rootPath = require('app-root-path')
 
 module.exports = function(path) {
 	var fullPath = rootPath + path
-	
+
 	try {
 		return require(fullPath)
 	} catch (e) {
