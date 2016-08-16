@@ -1,0 +1,33 @@
+{
+  "name": "require-all-root",
+  "version": "1.0.0",
+  "description": "Require all files from app's root path (require-all + app-root-path)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedor/node-require-all-root.git"
+  },
+  "keywords": [
+    "require",
+    "all",
+    "root",
+    "path",
+    "util",
+    "utility",
+    "module",
+    "modules",
+    "app-root-path",
+    "root-path",
+    "require-all",
+    "import"
+  ],
+  "author": "Fedor Korshunov <mail@fedor.cc>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fedor/node-require-all-root/issues"
+  },
+  "homepage": "https://github.com/fedor/node-require-all-root#readme"
+}
