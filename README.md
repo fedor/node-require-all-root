@@ -17,7 +17,7 @@ const req = require('require-all-root')
 const lib = req('/lib')
 ```
 
-## Usage as a universal replacement of require()
+## Usage as a require() replacement
 
 `require-all-root` can import individual files, modules and packages from `/node_modules`.
 
@@ -43,11 +43,16 @@ const data = req('/data')
 To avoid `require('require-all-root')` in multiple files, you can setup it ones in а `global` object
 ```js
 // In start.js
-global.reqall = require('require-all-root')
+global.req = require('require-all-root')
  
 // In /some/path.js 
-const lib = reqall('/lib')
+const lib = req('/lib')
 ```
+
+## Changelog
+
+**1.0.1**
+- Ensure module inner errors are thrown
 
 ## Thanks
 - **Felix Geisendörfer** for [require-all](https://github.com/felixge/node-require-all)
