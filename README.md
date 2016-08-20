@@ -52,7 +52,8 @@ const lib = req('/lib')
 ## Changelog
 
 **1.0.1**
-- Ensure module inner errors are thrown
+- Module inner errors are thrown
+- Allows to require all for relative path
 
 ## Thanks
 - **Felix Geisendörfer** for [require-all](https://github.com/felixge/node-require-all)
