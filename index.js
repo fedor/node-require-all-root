@@ -8,7 +8,7 @@ module.exports = function(path) {
 		return require(fullPath)
 	} catch (e) {
 		if (e.code !== 'MODULE_NOT_FOUND') {
-			throw e
+			throw e	
 		}
 		// No fullPath.js, fullPath/index.js or fullPath/index.node
 	}
@@ -17,9 +17,18 @@ module.exports = function(path) {
 		return requireAll(fullPath)
 	} catch (e) {
 		if (e.code !== 'ENOENT') {
-			throw e
+			throw e	
 		}
-		// No full path
-		return require(path)
+		// No fullPath directory was found
 	}
+
+	try {
+		return require(path)
+	} catch (e) {
+		if (e.code !== 'MODULE_NOT_FOUND') {
+			throw e	
+		}
+	}
+
+	return requireAll(path)
 }
