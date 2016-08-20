@@ -1,6 +1,6 @@
 {
   "name": "require-all-root",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Require all files from app's root path (require-all + app-root-path)",
   "main": "index.js",
   "scripts": {
